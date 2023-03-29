@@ -5,8 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anasayfa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Quantico&family=VT323&display=swap');
+        :root{
+            font-size: 18px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(36, 36, 36);
+            font-family: 'Quantico', sans-serif;
+            font-size: 1.5em;
+        }
+        h2{
+            color: white;
+        }
+        .frame{
+            color: white;
+        }
+        .frame a{
+            text-decoration: none;
+        }
+        .projects{
+            position: relative;
+            line-height: 40px;
+            transition: 0.4s;
+            color: rgb(255, 255, 255);
+            text-indent: 10px;
+        }
+        .projects:hover{
+            text-indent: 20px;
+        }
+        .projects .line{
+            animation: rainbow-bg 10s ease infinite;
+            position: absolute;
+            width: 5px;
+            height: 30px;
+            top: calc(50% - 15px);
+            background-color: aqua;
+        }
+        @keyframes rainbow-bg{
+		100%,0%{
+			background-color: rgb(255,0,0);
+		}
+		8%{
+			background-color: rgb(255,127,0);
+		}
+		16%{
+			background-color: rgb(255,255,0);
+		}
+		25%{
+			background-color: rgb(127,255,0);
+		}
+		33%{
+			background-color: rgb(0,255,0);
+		}
+		41%{
+			background-color: rgb(0,255,127);
+		}
+		50%{
+			background-color: rgb(0,255,255);
+		}
+		58%{
+			background-color: rgb(0,127,255);
+		}
+		66%{
+			background-color: rgb(0,0,255);
+		}
+		75%{
+			background-color: rgb(127,0,255);
+		}
+		83%{
+			background-color: rgb(255,0,255);
+		}
+		91%{
+			background-color: rgb(255,0,127);
+		}
+}
+    </style>
 </head>
 <body>
-    <h1>index file</h1>
+    <main>
+        <h2>My Portfolio</h2>
+        <div class="frame">
+            <a href="./movies/index.html"><div class="projects">Movie Rate<div class="line"></div></div></a>
+            <a href="./weather-forcast/index.html"><div class="projects">Weather Forcast<div class="line"></div></div></a>
+            <a href="./single/index.html"><div class="projects">Fashion Website<div class="line"></div></div></a>
+            <a href="./todo/index.html"><div class="projects">ToDo App<div class="line"></div></div></a>
+            <a href="./e-menu/index.html"><div class="projects">E-Menu<div class="line"></div></div></a>
+        </div>
+    </main>
 </body>
 </html>

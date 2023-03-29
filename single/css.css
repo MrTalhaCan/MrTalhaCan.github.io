@@ -79,12 +79,16 @@
   background: transparent;
   border-color: transparent;
   color: hsl(205, 78%, 60%);
-  transition: all 0.3s linear;
   cursor: pointer;
   color: hsl(360, 67%, 44%);
 }
 
-.close-btn:hover {
+.close-btn img{
+  transition: all 0.3s linear;
+}
+
+
+.close-btn img:hover {
   color: hsl(360, 71%, 66%);
   transform: rotate(360deg);
 }
