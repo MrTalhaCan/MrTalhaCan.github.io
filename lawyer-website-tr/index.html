@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Avukat Websitesi</title>
 </head>
 <body class="bg-white">
@@ -43,11 +44,11 @@
                         <a href="#iletisim"><button class="text-2xl font-bold bg-[#99272d] p-3 rounded">Avukatım Ol!</button></a>
                     </div>
                 </div>
-                <div class="w-full h-full sm:w-1/3 bg-no-repeat bg-cover bg-center" style="background-image: url(./assets/Avukat.png)"></div>
+                <div class="w-full h-full sm:w-1/3 bg-no-repeat bg-cover bg-center" data-aos="fade-left" style="background-image: url(./assets/Avukat.png)"></div>
             </div>
         </section>
         <section class="my-28 text-center">
-            <p class="text-3xl p-5 bg-[#36454faa] text-white">
+            <p class="text-3xl p-5 bg-[#36454faa] text-white" data-aos="fade-down">
                 "Her arayışta olan adam için olduğu gibi, avukat için de önde gelen kural gayrettir."<br />
                 <span class="text-2xl">-Abraham Lincoln</span>
             </p>
@@ -84,7 +85,7 @@
                 </div>
                 <div class="sm:w-2/3">
                     <form class="w-full h-full flex flex-col gap-2">
-                        <h1 class="text-4xl text-center text-white p-2">İletişime Geç!</h1>
+                        <h1 class="text-4xl text-center text-white p-2" data-aos="zoom-in-down">İletişime Geç!</h1>
                         <div class="flex w-full flex-col justify-evenly h-full gap-5">
                             <div class="flex w-full h-12 gap-3"><div class="w-1/2 h-full"><input class="h-full w-full border" type="text" placeholder="isim"/></div><div class="w-1/2 h-full"><input class="h-full w-full border" type="text" placeholder="soyisim"/></div></div>
                             <div class="w-full h-12"><div class="h-full"><input class="h-full w-full border" type="number" placeholder="telefon"/></div></div>
@@ -100,13 +101,13 @@
             <div class="m-auto flex flex-col justify-evenly h-full">
                 <h1 class="text-5xl text-center">Baktığım Mahkemeler</h1>
                 <div class="text-center text-3xl">
-                    <div class="p-3">
+                    <div class="p-3" data-aos="fade-up-left">
                         Sulh Ceza Mahkemeleri
                     </div>
-                    <div class="p-3">
+                    <div class="p-3" data-aos="fade-up-right">
                         Ağır Ceza Mahkemeleri
                     </div>
-                    <div class="p-3">
+                    <div class="p-3" data-aos="fade-up-left">
                         İcra Hukuk Mahkemeleri
                     </div>
                 </div>
@@ -163,6 +164,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:1000});
+    </script>
     <script src="js.js"></script>
 </body>
 </html>
