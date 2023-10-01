@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.heroAnim{
+    animation: heroAnim 5s linear infinite;
+}
+
+img{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+@keyframes heroAnim{
+    0%   {transform: translateY(50px);}
+  50%  {transform: translateY(100px);}
+  100% {transform: translateY(50px);}
+}
+
