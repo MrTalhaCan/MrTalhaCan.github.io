@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook - TR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./gallery.css" />
+    <!-- Calendar CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/dark.min.css" rel="stylesheet">
+    <!-- Calendar Plugin JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js" defer></script>
+</head>
+<body style="font-family: 'Roboto Mono', monospace;">
+    <main class="max-w-[1920px]">
+        <section class="w-full h-screen bg-gradient-to-r from-neutral-600 to-neutral-900">
+            <div class="relative"><img class="md:h-[120px] h-[60px] absolute top-0 left-0 xl:left-1/2 bg-neutral-950 rounded-3xl" src="./brand/chef-cap.png" alt=""></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex flex-col justify-center items-center xl:flex-row"><div class="max-w-[500px] xl:max-w-none w-full xl:w-2/3"><img class="w-full h-full object-scale-down" src="./slider-img/pizza.png" alt=""></div>
+                  <div class="w-full xl:w-1/3 m-auto text-white">
+                      <h1 class="text-6xl text-center xl:text-left">Pizza</h1>
+                      <p class="py-5 text-2xl xl:text-3xl xl:pr-20" style="font-family: initial;">Fırından yeni çıkmış bir pizza kokusu... Dilimler arasından aşağı sarkan uzadıkça uzayan mozzarella peyniri ve kızarmış sucuk dilimleri altında kendini gösteren kekik kokulu domates sosu. Sucuklu pizzanın güzelliğini anlatmak için yeter de artar.
+      
+                      Sucuklu pizza tarifine ilave peynir ve şarküteri çeşidi ekleyecekleri de tutmuyoruz. Afiyet olsun.</p>
+                  </div></div>
+                  <div class="swiper-slide flex flex-col justify-center items-center xl:flex-row"><div class="max-w-[500px] xl:max-w-none xl:w-2/3"><img class="w-full h-full object-scale-down" src=".//slider-img/hamburger.png" alt=""></div>
+                  <div class="w-full xl:w-1/3 m-auto text-white">
+                      <h1 class="text-6xl text-center xl:text-left">Hamburger</h1>
+                      <p class="py-5 text-2xl xl:text-3xl" style="font-family: initial;">Özel sosu, karamelize soğanı ev yapımı hamburger ekmeği ve asla kuru olmayan muhteşem köftesi ile sofranıza bol yıldızlar yağdırıyorum 🌟.
+      
+                          Ekmek ve köfteleri daha küçük hazırlayıp daha fazla hamburger yapabilirsiniz.</p>
+                  </div></div>
+                  <div class="swiper-slide flex flex-col justify-center items-center xl:flex-row"><div class="max-w-[500px] xl:max-w-none xl:w-2/3"><img class="w-full h-full object-scale-down" src="./slider-img/macaron.png" alt=""></div>
+                  <div class="w-full xl:w-1/3 m-auto text-white">
+                      <h1 class="text-6xl text-center xl:text-left">Macaron</h1>
+                      <p class="py-5 text-2xl xl:text-3xl xl:pr-20" style="font-family: initial;">Renkli ve çeşitli aromalara sahip bu Fransız tatlısı, birçok kişinin favorisi haline gelmiştir. Hem görsel olarak çekici olmaları hem de çeşitli lezzet kombinasyonları sunmaları, macaronları popüler kılan faktörler arasındadır</p>
+                  </div></div>
+                </div>
+                <div class="swiper-button-next text-white"></div>
+                <div class="swiper-button-prev text-white"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+              </div>
+        </section>
+        <section class="">
+            <div class="relative flex justify-center flex-col w-full">
+              <h1 class="text-5xl text-center text-white bg-neutral-800 py-20">Ben Kimim?</h1>
+              <p class="text-3xl text-neutral-800 p-12 indent-8 flex flex-col-reverse m-auto lg:flex-row items-center tracking-wide" style="font-family: initial;">Merhaba, ben Soner! Mutfakta geçirdiğim yıllar boyunca lezzetin büyülü dünyasına duyduğum tutku, beni yemek sanatında ustalaşmaya yönlendirdi. Her bir tabağı bir hikaye gibi anlatma arzusuyla hareket ediyorum ve bu tutkum, yemeklerimi hazırlarken benimle birlikte sofranın tadını çıkaran herkesi etkiliyor.
+
+                Mutfakta geçirdiğim her an, benim için bir öğrenme ve keşif süreci olmuştur. Bu yolculukta elde ettiğim deneyim ve bilgiyi, sizinle paylaşarak lezzet dolu bir sofra deneyimi yaşatmayı amaçlıyorum. Gelin, birlikte yemek masasında unutulmaz anılar biriktirelim!<img class="w-full md:w-[600px]" src="./brand/chef.png" alt=""></p>
+            </div>
+        </section>
+        <section class="w-full">
+          <img class="w-full" src="./menu.jpg" alt="">
+        </section>
+        <section class="gallery flex flex-col min-h-screen justify-center items-center bg-neutral-800">
+          <h1 class="text-5xl py-20 text-white">Soğuk İçeceklerimiz</h1>
+          <ul class="w-full md:w-4/5">
+            <li>
+                <figure>
+                  <img src='./icecekler/dondurmali-frappe-600x740.jpg'>
+                  <figcaption><strong>Dondurmalı Frappe</strong></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                  <img src='./icecekler/frappe-600x740.jpg' alt='Guy on a bike ok a wooden bridge with a forest backdrop'>
+                  <figcaption><strong>Frappe</strong></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                  <img src='./icecekler/oreo-frappe-600x740.jpg' alt='Person standing alone in a misty forest'>
+                  <figcaption><strong>Oreo Frappe</strong></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                  <img src='./icecekler/white-mocha-frappe-600x740.jpg' alt='Person hiking on a trail through mountains while taking a photo with phone'>
+                  <figcaption><strong>White Mocha Frappe</strong></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                  <img src='./icecekler/karadut-deryasi-600x740.jpg' alt='Street scene with person walking and others on motorbikes, all wearing masks'>
+                  <figcaption><strong>Karadut Deryası</strong></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                  <img src='./icecekler/limon-milkshake-600x740.jpg' alt='Fashionable-looking girl with blond hair and pink sunglasses'>
+                  <figcaption><strong>Limon Milkshake</strong></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                  <img src='./icecekler/nane-limon-frozen-600x740.jpg' alt='Fashionable-looking girl with blond hair and pink sunglasses'>
+                  <figcaption><strong>Nane Limon Frozen</strong></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                  <img src='./icecekler/visne-muz-aski-600x740.jpg' alt='Fashionable-looking girl with blond hair and pink sunglasses'>
+                  <figcaption><strong>Vişne Muz Aşkı</strong></figcaption>
+                </figure>
+            </li>
+          </ul>
+        </section>
+        <section class="w-full bg-neutral-800">
+          <h1 class="text-5xl text-white text-center py-20">Rezervasyon</h1>
+          <div class="w-full h-[600px]" id="calendar"></div>
+        </section>
+        <footer class="w-full h-[250px] flex gap-x-6 md:gap-x-16 justify-center items-center bg-neutral-800">
+          <div class="w-[120px] min-w-[100px] rounded-3xl bg-neutral-950"><img class="w-full" src="./brand/chef-cap.png" alt=""></div>
+          <p class="text-2xl text-white">Copyright by Somer Şef, design by Talha Can G.</p>
+        </footer>
+    </main>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+  <script>
+    const options = {
+      settings: {
+        lang: 'tr-TR',
+      },
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+        const calendar = new VanillaCalendar('#calendar', options);
+        calendar.init();
+    });
+  </script>
+</body>
+</html>
