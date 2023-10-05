@@ -3,27 +3,6 @@
     animation: heroAnim 5s linear infinite;
 }
 
-.loading{
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(2, 6, 23);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
-.loading::after{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: url(./loading.gif) no-repeat center;
-}
-.loading > body{
-  opacity: 0;
-}
-
 img{
   -webkit-user-drag: none;
   -khtml-user-drag: none;
