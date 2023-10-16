@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Quantico&family=VT323&display=swap');
+        :root{
+            font-size: 18px;
+            --mainColor: rgb(26, 26, 26);
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            font-size: 1.5rem;
+            background-color: var(--mainColor);
+            color: white;
+            font-family: 'Quantico';
+        }
+        main{
+            max-width: 1200px;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color: var(--mainColor);
+        }
+        img {
+            user-drag: none;
+            -webkit-user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        .hero {
+            display: flex;
+            height: 100vh;
+            max-height: 600px;
+            justify-content: center;
+        }
+
+        .hero .hero-sub{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero .hero-sub:last-child{
+            color: var(--mainColor);
+            background-color: white;
+        }
+        .hero .hero-sub .me{
+            font-size: 2em;
+            text-align: center;
+        }
+        .hero .hero-sub .title{
+            font-size: 1em;
+        }
+        .hero .hero-sub .write-me{
+            font-size: 1.2em;
+        }
+        .hero .hero-sub .contact img{
+            width: 20px;
+        }
+        .works{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .works .work{
+            width: 50%;
+            overflow: hidden;
+        }
+        .works .work img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 1.2s ease;
+        }
+        .works .work img:hover{
+            scale: 1.2;
+        }
+        .work-cap{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            display: flex;
+            transition: 1s ease;
+        }
+        .work-cap .explain{
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .work-cap a{
+            height: 100%;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+        .work-cap .live{    
+            color: var(--mainColor);
+        }
+        .trans-up{
+            transform: translateY(-80px);
+        }
+        @media only screen and (max-width: 1024px){
+            .hero{
+                flex-direction: column;
+            }
+            .hero .hero-sub .me{
+                font-size: 1.5em;
+            }
+            .hero .hero-sub .title{
+                font-size: .8em;
+            }
+            .works .work{
+                width: 100%;
+                border: 5px solid black;
+            }
+            .work-cap{
+                height: 70px;
+            }
+            .trans-up{
+            transform: translateY(-70px);
+            }
+        }

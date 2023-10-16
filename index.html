@@ -5,108 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anasayfa</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Quantico&family=VT323&display=swap');
-        :root{
-            font-size: 18px;
-        }
-        *{
-            box-sizing: border-box;
-        }
-
-        body{
-            padding: 0;
-            margin: 0;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(36, 36, 36);
-            font-family: 'Quantico', sans-serif;
-            font-size: 1.5em;
-        }
-        h2{
-            color: white;
-        }
-        .frame{
-            color: white;
-        }
-        .frame a{
-            text-decoration: none;
-        }
-        .projects{
-            position: relative;
-            line-height: 40px;
-            transition: 0.4s;
-            color: rgb(255, 255, 255);
-            text-indent: 10px;
-        }
-        .projects:hover{
-            text-indent: 20px;
-        }
-        .projects .line{
-            animation: rainbow-bg 10s ease infinite;
-            position: absolute;
-            width: 5px;
-            height: 30px;
-            top: calc(50% - 15px);
-            background-color: aqua;
-        }
-        @keyframes rainbow-bg{
-		100%,0%{
-			background-color: rgb(255,0,0);
-		}
-		8%{
-			background-color: rgb(255,127,0);
-		}
-		16%{
-			background-color: rgb(255,255,0);
-		}
-		25%{
-			background-color: rgb(127,255,0);
-		}
-		33%{
-			background-color: rgb(0,255,0);
-		}
-		41%{
-			background-color: rgb(0,255,127);
-		}
-		50%{
-			background-color: rgb(0,255,255);
-		}
-		58%{
-			background-color: rgb(0,127,255);
-		}
-		66%{
-			background-color: rgb(0,0,255);
-		}
-		75%{
-			background-color: rgb(127,0,255);
-		}
-		83%{
-			background-color: rgb(255,0,255);
-		}
-		91%{
-			background-color: rgb(255,0,127);
-		}
-}
-    </style>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <main>
-        <h2>My Portfolio</h2>
-        <div class="frame">
-	    <a href="https://next-js-youtube-clone.vercel.app"><div class="projects">Youtube Clone (Progress)<div class="line"></div></div></a>
-            <a href="./nike/index.html"><div class="projects">Nike Website<div class="line"></div></div></a>
-            <a href="./cook-website-tr/index.html"><div class="projects">Cook Website TR<div class="line"></div></div></a>
-            <a href="./single/index.html"><div class="projects">Fashion Website<div class="line"></div></div></a>
-            <a href="./weather-forcast/index.html"><div class="projects">Weather Forcast<div class="line"></div></div></a>
-	        <a href="./movies/index.html"><div class="projects">Movie Rate<div class="line"></div></div></a>
-            <a href="./lawyer-website-tr/index.html"><div class="projects">Lawyer Website TR<div class="line"></div></div></a>		
-            <a href="./todo/index.html"><div class="projects">Todo<div class="line"></div></div></a>
-            <a href="./e-menu/index.html"><div class="projects">E-Menu<div class="line"></div></div></a>
-        </div>
+        <section class="hero">
+            <div class="hero-sub">
+                <div class="me">
+                    <div>Hi 👋</div>
+                    <div>I'm Talha Can G.</div>
+                </div>
+                <p class="title">
+                    -Full-Stack Developer-
+                </p>
+            </div>
+            <div class="hero-sub">
+                <div class="write-me">Write to me!</div>
+                <div class="contact">
+                    <a href="https://twitter.com/CanTalha90" target="_blank"><div title="twitter">Twitter <img src="./home-assets/expand.png" alt="twitter"></div></a>
+                    <a href="https://www.linkedin.com/in/talha-can-gocgun" target="_blank"><div title="linkedin">Linkedin <img src="./home-assets/expand.png" alt="linkedin"></div></a>
+                    <a href="mailto:talhacan58322@hotmail.com" target="_blank"><div title="email">Email <img src="./home-assets/expand.png" alt="email"></div></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="works ">
+                <div class="work"><img src="./home-assets/cook-works.png" alt="cook"><div class="work-cap"><div class="explain">Cook Website</div><a href="./cook-website-tr/" target="_blank"><div class="live">Live</div></a></div></div>
+                <div class="work"><img src="./home-assets/nike-works.png" alt="nike"><div class="work-cap"><div class="explain">Nike Website</div><a href="./nike/" target="_blank"><div class="live">Live</div></a></div></div>
+                <div class="work"><img src="./home-assets/youtube-works.png" alt="youtube"><div class="work-cap"><div class="explain">Youtube Clone</div><a href="https://next-js-youtube-clone.vercel.app/" target="_blank"><div class="live">Live</div></a></div></div>
+                <div class="work"><img src="./home-assets/fashion-works.png" alt="fashion"><div class="work-cap"><div class="explain">Fashion Website</div><a href="./single/" target="_blank"><div class="live">Live</div></a></div></div>
+                <div class="work"><img src="./home-assets/weather-forecast-works.png" alt="weather"><div class="work-cap"><div class="explain">Weather Forecast</div><a href="./weather-forcast/" target="_blank"><div class="live">Live</div></a></div></div>
+                <div class="work"><img src="./home-assets/lawyer-website-tr-works.png" alt="lawyer"><div class="work-cap"><div class="explain">Lawyer Website</div><a href="./lawyer-website-tr/" target="_blank"><div class="live">Live</div></a></div></div>
+            </div>
+        </section>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>
