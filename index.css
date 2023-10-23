@@ -66,9 +66,11 @@
         .works{
             display: flex;
             flex-wrap: wrap;
+            row-gap: 50px;
+            margin-top: 50px;
         }
         .works .work{
-            width: 50%;
+            width: 33%;
             overflow: hidden;
         }
         .works .work img{
